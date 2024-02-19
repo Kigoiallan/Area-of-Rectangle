@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Area Page</title>
+	<style type="text/css">
+		#myRectangle{
+			width: 300px;
+			height: 100px;
+			background: linear-gradient(hotpink, yellowgreen);
+			margin: 20px;
+			border-radius: 5px;
+			border: 3px solid transparent;
+			margin-bottom:30px;
+
+		}
+		#myArea{
+			background-color: #000;
+			top: 100;
+			width: 1000px;
+			height: 100px;
+			color: #fff;
+			font-weight: 900px;
+			margin-top: 50px;
+			margin-left: 20px;
+
+		}
+
+		#myLength, #myWidth {
+			width: 100px;
+			height: 5vw;
+			border: 2px solid black;
+			border-radius: 10px;
+			display: flex;
+
+		}
+
+		#myButton{
+			background-color: blue;
+			color: white;
+			border-radius: 8px;
+			height: 10vw;
+			border: none;
+
+		}
+		#myButton:hover{
+			cursor: pointer;
+			background-color: orange;
+			color: black;
+		}
+	</style>
+</head>
+<body>
+	<div id="myRectangle"></div>
+	<label>Length</label>
+	<input type="text" id="myLength"><br>
+	<label>Width</label>
+	<input type="text" id="myWidth"><br>
+	<button id="myButton" onclick="areaOfRectangle()" type="submit">Calculate</button><br>
+	<label id="myArea"></label>
+
+
+	<script type="text/javascript" src="RArea.js"></script>
+
+</body>
+</html>
